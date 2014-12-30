@@ -1,0 +1,23 @@
+{
+    "version": "0.1.4",
+    "name": "com.msopentech.azure-mobile-services",
+    "cordova_name": "Windows Azure Mobile Services",
+    "description": "Exposes JavaScript api to access a Windows Azure Mobile Services instance",
+    "license": "Apache 2.0",
+    "repo": "https://github.com/msopentech/cordova-azure-mobile-services/",
+    "issue": "https://github.com/msopentech/cordova-azure-mobile-services/issues",
+    "keywords": [
+        "azure",
+        " services",
+        " zumo",
+        " cloud"
+    ],
+    "platforms": [
+        "windows8",
+        "windows",
+        "wp8",
+        "ios",
+        "android"
+    ],
+    "engines": []
+}

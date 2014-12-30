@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vandammeford.kevinf.perftest1_java.AzureList">
+    <ListView android:layout_width="match_parent"
+        android:id="@+id/lstRegistrations"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"/>
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text ="Clear" />
+    <Button
+        android:id="@+id/btnFetch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fetch"/>
+</LinearLayout>

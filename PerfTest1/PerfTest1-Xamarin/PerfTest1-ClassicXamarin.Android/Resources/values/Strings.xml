@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ApplicationName">PerfTest1-ClassicXamarin.Android</string>
+    <string name="azure_list">Azure List</string>
+    <string name="calc_primes">Enter Max Value:</string>
+</resources>

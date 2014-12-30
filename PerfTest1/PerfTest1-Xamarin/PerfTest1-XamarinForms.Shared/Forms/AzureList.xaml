@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+					   x:Class="PerfTest1_XamarinForms.Forms.AzureList">
+    <StackLayout Orientation="Vertical" Spacing="0" Padding="0">
+        <ListView x:Name="lstAzureList" ItemsSource="{Binding Registrations}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <Label Text="{Binding screenname}" HorizontalOptions="FillAndExpand"></Label>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button HorizontalOptions="FillAndExpand" VerticalOptions="End" Text="Clear" x:Name="btnClear" Command="{Binding Clear}"></Button>
+        <Button HorizontalOptions="FillAndExpand" VerticalOptions="End" Text="Fetch" x:Name="btnFetch" Command="{Binding Fetch}"></Button>
+    </StackLayout>
+</ContentPage>

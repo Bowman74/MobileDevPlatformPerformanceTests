@@ -1,0 +1,2 @@
+D:\Projects\GitHub\MobileDevPlatformPerformanceTests\PerfTest1\PerfTest1-Xamarin\PerfTest1-ClassicXamarin.Ios\obj\iPhone\Debug\
+D:\Projects\GitHub\MobileDevPlatformPerformanceTests\PerfTest1\PerfTest1-Xamarin\PerfTest1-ClassicXamarin.Ios\obj\iPhone\Debug\PerfTest1-ClassicXamarin.Ios.csprojResolveAssemblyReference.cache
