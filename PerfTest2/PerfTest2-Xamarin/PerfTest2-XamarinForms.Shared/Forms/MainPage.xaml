@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:PerfTest2Xamarin.ViewModels;assembly=PerfTest2Xamarin"
+             x:Class="PerfTest2Xamarin.Forms.MainPage"
+             BindingContext="{StaticResource Vm}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <viewModels:MainMenuViewModel x:Key="Vm" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ListView x:Name="lstMainMenu" ItemsSource="{Binding MenuItems, Source={StaticResource Vm}}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding Description}" Command="{Binding Path=SelectMenuItem, Source={StaticResource Vm}}" CommandParameter="{Binding Index}"></TextCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

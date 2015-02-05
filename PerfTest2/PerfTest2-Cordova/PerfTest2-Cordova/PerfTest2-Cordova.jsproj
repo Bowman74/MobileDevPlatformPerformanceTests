@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|iOS">
+      <Configuration>Debug</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-x64">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-x86">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows Phone 8">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows Phone 8</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows Phone (Universal)">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Android">
+      <Configuration>Release</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|iOS">
+      <Configuration>Release</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-x64">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-x86">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-ARM">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows Phone 8">
+      <Configuration>Release</Configuration>
+      <Platform>Windows Phone 8</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows Phone (Universal)">
+      <Configuration>Release</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Android">
+      <Configuration>Distribution</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|iOS">
+      <Configuration>Distribution</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-AnyCPU">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-x64">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-x86">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-ARM">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows Phone 8">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows Phone 8</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows Phone (Universal)">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>5f0454b4-3bcd-410b-8cb2-94d0b409403c</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0'">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="app\fileUtilities.js" />
+    <Content Include="app\sqLiteUtilities.js" />
+    <Content Include="css\afui.less" />
+    <Content Include="css\android.css" />
+    <Content Include="css\appframework.css" />
+    <Content Include="css\badges.css" />
+    <Content Include="css\bb.css" />
+    <Content Include="css\buttons.css" />
+    <Content Include="css\docs.css" />
+    <Content Include="css\flex.css" />
+    <Content Include="css\forms.css" />
+    <Content Include="css\grid.css" />
+    <Content Include="css\icons.css" />
+    <Content Include="css\ios.css" />
+    <Content Include="css\ios7.css" />
+    <Content Include="css\lists.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\plugins\accordion.css" />
+    <Content Include="css\plugins\af.accordion.css" />
+    <Content Include="css\plugins\af.actionsheet.css" />
+    <Content Include="css\plugins\af.popup.css" />
+    <Content Include="css\plugins\af.scroller.css" />
+    <Content Include="css\plugins\af.selectBox.css" />
+    <Content Include="css\plugins\tabs.css" />
+    <Content Include="css\tizen.css" />
+    <Content Include="css\win8.css" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\.fetch.json" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\AUTHORS.md" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\bin\test.ps1" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\bin\test.sh" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\CHANGES.md" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\Lawnchair-adapter\Lawnchair-sqlitePlugin.js" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\Lawnchair-adapter\test-www\index.html" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\Lawnchair-adapter\test-www\lawnchair-spec.js" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\Lawnchair-adapter\test-www\Lawnchair-sqlitePlugin.js" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\Lawnchair-adapter\test-www\lib\json2.js" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\Lawnchair-adapter\test-www\lib\lawnchair.js" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\Lawnchair-adapter\test-www\lib\qunit.css" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\Lawnchair-adapter\test-www\lib\qunit.js" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\LICENSE.md" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\plugin.xml" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\README.md" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\SQLitePlugin.coffee.md" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\android\org\pgsqlite\SQLitePlugin.java" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\ios\SQLitePlugin.h" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\ios\SQLitePlugin.m" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\alter_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\analyze_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\attach_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\auth_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\backup_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\bitvec_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\btmutex_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\BtreeInt_h.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\btree_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\Btree_h.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\build_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\callback_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\complete_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\crypto.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\ctime_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\date_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\Delegates.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\delete_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\expr_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\fault_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\fkey_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\func_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\global_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\hash_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\Hash_h.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\hwtime_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\insert_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\journal_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\keywordhash_h.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\legacy_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\loadext_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\main_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\malloc_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\memjournal_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\mem_Pool.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\mutex_h.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\mutex_noop_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\notify_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\opcodes_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\opcodes_h.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\os_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\os_common_h.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\os_h.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\os_win_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\pager_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\pager_h.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\parse_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\parse_h.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\pcache1_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\pcache_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\pcache_h.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\pragma_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\prepare_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\printf_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\random_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\resolve_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\rowset_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\select_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\sqlite3_h.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\sqliteInt_h.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\sqliteLimit_h.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\status_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\table_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\tokenize_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\trigger_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\update_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\utf_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\util_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\vacuum_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\vdbeapi_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\vdbeaux_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\vdbeblob_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\VdbeInt_h.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\vdbemem_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\vdbetrace_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\vdbe_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\Vdbe_h.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\vtab_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\walker_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\wal_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\wal_h.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\where_c.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\csharp-sqlite-src\_Custom.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\SQLite.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\src\wp\SQLitePlugin.cs" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\test-www\.cordova\config.json" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\test-www\config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\test-www\platforms\.gitignore" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\test-www\plugins\.gitignore" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\test-www\www\index.html" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\test-www\www\qunit-1.5.0.css" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\test-www\www\qunit-1.5.0.js" />
+    <Content Include="plugins\com.brodysoft.sqlitePlugin\www\SQLitePlugin.js" />
+    <Content Include="plugins\org.apache.cordova.file\.fetch.json" />
+    <Content Include="plugins\org.apache.cordova.file\CONTRIBUTING.md" />
+    <Content Include="plugins\org.apache.cordova.file\doc\de\index.md" />
+    <Content Include="plugins\org.apache.cordova.file\doc\de\plugins.md" />
+    <Content Include="plugins\org.apache.cordova.file\doc\es\index.md" />
+    <Content Include="plugins\org.apache.cordova.file\doc\es\plugins.md" />
+    <Content Include="plugins\org.apache.cordova.file\doc\fr\index.md" />
+    <Content Include="plugins\org.apache.cordova.file\doc\fr\plugins.md" />
+    <Content Include="plugins\org.apache.cordova.file\doc\index.md" />
+    <Content Include="plugins\org.apache.cordova.file\doc\it\index.md" />
+    <Content Include="plugins\org.apache.cordova.file\doc\it\plugins.md" />
+    <Content Include="plugins\org.apache.cordova.file\doc\ja\index.md" />
+    <Content Include="plugins\org.apache.cordova.file\doc\ja\plugins.md" />
+    <Content Include="plugins\org.apache.cordova.file\doc\ko\index.md" />
+    <Content Include="plugins\org.apache.cordova.file\doc\ko\plugins.md" />
+    <Content Include="plugins\org.apache.cordova.file\doc\plugins.md" />
+    <Content Include="plugins\org.apache.cordova.file\doc\pl\index.md" />
+    <Content Include="plugins\org.apache.cordova.file\doc\pl\plugins.md" />
+    <Content Include="plugins\org.apache.cordova.file\doc\ru\index.md" />
+    <Content Include="plugins\org.apache.cordova.file\doc\ru\plugins.md" />
+    <Content Include="plugins\org.apache.cordova.file\doc\zh\index.md" />
+    <Content Include="plugins\org.apache.cordova.file\doc\zh\plugins.md" />
+    <Content Include="plugins\org.apache.cordova.file\LICENSE" />
+    <Content Include="plugins\org.apache.cordova.file\NOTICE" />
+    <Content Include="plugins\org.apache.cordova.file\package.json" />
+    <Content Include="plugins\org.apache.cordova.file\plugin.xml" />
+    <Content Include="plugins\org.apache.cordova.file\README.md" />
+    <Content Include="plugins\org.apache.cordova.file\RELEASENOTES.md" />
+    <Content Include="plugins\org.apache.cordova.file\src\android\ContentFilesystem.java" />
+    <Content Include="plugins\org.apache.cordova.file\src\android\DirectoryManager.java" />
+    <Content Include="plugins\org.apache.cordova.file\src\android\EncodingException.java" />
+    <Content Include="plugins\org.apache.cordova.file\src\android\FileExistsException.java" />
+    <Content Include="plugins\org.apache.cordova.file\src\android\FileHelper.java" />
+    <Content Include="plugins\org.apache.cordova.file\src\android\Filesystem.java" />
+    <Content Include="plugins\org.apache.cordova.file\src\android\FileUtils.java" />
+    <Content Include="plugins\org.apache.cordova.file\src\android\InvalidModificationException.java" />
+    <Content Include="plugins\org.apache.cordova.file\src\android\LocalFilesystem.java" />
+    <Content Include="plugins\org.apache.cordova.file\src\android\LocalFilesystemURL.java" />
+    <Content Include="plugins\org.apache.cordova.file\src\android\NoModificationAllowedException.java" />
+    <Content Include="plugins\org.apache.cordova.file\src\android\TypeMismatchException.java" />
+    <Content Include="plugins\org.apache.cordova.file\src\blackberry10\index.js" />
+    <Content Include="plugins\org.apache.cordova.file\src\firefoxos\FileProxy.js" />
+    <Content Include="plugins\org.apache.cordova.file\src\ios\CDVAssetLibraryFilesystem.h" />
+    <Content Include="plugins\org.apache.cordova.file\src\ios\CDVAssetLibraryFilesystem.m" />
+    <Content Include="plugins\org.apache.cordova.file\src\ios\CDVFile.h" />
+    <Content Include="plugins\org.apache.cordova.file\src\ios\CDVFile.m" />
+    <Content Include="plugins\org.apache.cordova.file\src\ios\CDVLocalFilesystem.h" />
+    <Content Include="plugins\org.apache.cordova.file\src\ios\CDVLocalFilesystem.m" />
+    <Content Include="plugins\org.apache.cordova.file\src\ubuntu\file.cpp" />
+    <Content Include="plugins\org.apache.cordova.file\src\ubuntu\file.h" />
+    <Content Include="plugins\org.apache.cordova.file\src\windows8\FileProxy.js" />
+    <Content Include="plugins\org.apache.cordova.file\src\windows\FileProxy.js" />
+    <Content Include="plugins\org.apache.cordova.file\src\wp\File.cs" />
+    <Content Include="plugins\org.apache.cordova.file\tests\plugin.xml" />
+    <Content Include="plugins\org.apache.cordova.file\tests\tests.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\android\FileSystem.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\copyTo.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\createEntryFromNative.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\FileProxy.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\FileSystem.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\getDirectory.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\getFile.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\getFileMetadata.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\getMetadata.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\getParent.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\info.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\moveTo.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\readAsArrayBuffer.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\readAsBinaryString.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\readAsDataURL.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\readAsText.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\readEntries.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\remove.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\removeRecursively.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\requestAllFileSystems.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\requestAnimationFrame.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\requestFileSystem.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\resolveLocalFileSystemURI.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\setMetadata.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\truncate.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\blackberry10\write.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\DirectoryEntry.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\DirectoryReader.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\Entry.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\File.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\FileEntry.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\FileError.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\FileReader.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\FileSystem.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\fileSystemPaths.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\fileSystems-roots.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\fileSystems.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\FileUploadOptions.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\FileUploadResult.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\FileWriter.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\firefoxos\FileSystem.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\Flags.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\ios\FileSystem.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\LocalFileSystem.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\Metadata.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\ProgressEvent.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\requestFileSystem.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\resolveLocalFileSystemURI.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\ubuntu\FileSystem.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\ubuntu\fileSystems-roots.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\ubuntu\FileWriter.js" />
+    <Content Include="plugins\org.apache.cordova.file\www\wp\FileUploadOptions.js" />
+    <Content Include="scripts\appframework.js" />
+    <Content Include="scripts\appframework.min.js" />
+    <Content Include="scripts\fastclick.js" />
+    <Content Include="scripts\plugins\af.8tiles.js" />
+    <Content Include="scripts\plugins\af.actionsheet.js" />
+    <Content Include="scripts\plugins\af.css3animate.js" />
+    <Content Include="scripts\plugins\af.desktopBrowsers.js" />
+    <Content Include="scripts\plugins\af.passwordBox.js" />
+    <Content Include="scripts\plugins\af.popup.js" />
+    <Content Include="scripts\plugins\af.scroller.js" />
+    <Content Include="scripts\plugins\af.scrollScreen.js" />
+    <Content Include="scripts\plugins\af.selectBox.js" />
+    <Content Include="scripts\plugins\af.slidemenu.js" />
+    <Content Include="scripts\plugins\af.touchEvents.js" />
+    <Content Include="scripts\plugins\af.touchLayer.js" />
+    <Content Include="scripts\plugins\README.md" />
+    <Content Include="ui\appframework.ui.js" />
+    <Content Include="ui\README.md" />
+    <Content Include="ui\transitions\fade.js" />
+    <Content Include="ui\transitions\flip.js" />
+    <Content Include="ui\transitions\pop.js" />
+    <Content Include="ui\transitions\slide.js" />
+    <Content Include="ui\transitions\slideDown.js" />
+    <Content Include="ui\transitions\slideUp.js" />
+    <Folder Include="images\" />
+    <Content Include="merges\android\scripts\android2.3-jscompat.js" />
+    <Content Include="merges\android\scripts\platformOverrides.js" />
+    <Folder Include="merges\ios\" />
+    <Content Include="merges\windows\scripts\platformOverrides.js" />
+    <Content Include="merges\windows\scripts\winstore-jscompat.js" />
+    <Folder Include="merges\wp8\" />
+    <Folder Include="res\icons\android\" />
+    <Folder Include="res\icons\ios\" />
+    <Folder Include="res\icons\wp8\" />
+    <Folder Include="res\icons\windows\" />
+    <Folder Include="res\screens\android\" />
+    <Folder Include="res\screens\ios\" />
+    <Folder Include="res\screens\windows\" />
+    <Folder Include="res\screens\wp8\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="index.html" />
+    <Content Include="scripts\index.js" />
+    <Content Include="scripts\platformOverrides.js" />
+    <Content Include="css\index.css" />
+    <Content Include="res\icons\android\icon-36-ldpi.png" />
+    <Content Include="res\icons\android\icon-48-mdpi.png" />
+    <Content Include="res\icons\android\icon-72-hdpi.png" />
+    <Content Include="res\icons\android\icon-96-xhdpi.png" />
+    <Content Include="res\icons\ios\icon-40.png" />
+    <Content Include="res\icons\ios\icon-40-2x.png" />
+    <Content Include="res\icons\ios\icon-50.png" />
+    <Content Include="res\icons\ios\icon-50-2x.png" />
+    <Content Include="res\icons\ios\icon-57.png" />
+    <Content Include="res\icons\ios\icon-57-2x.png" />
+    <Content Include="res\icons\ios\icon-60.png" />
+    <Content Include="res\icons\ios\icon-60-2x.png" />
+    <Content Include="res\icons\ios\icon-72.png" />
+    <Content Include="res\icons\ios\icon-72-2x.png" />
+    <Content Include="res\icons\ios\icon-76.png" />
+    <Content Include="res\icons\ios\icon-76-2x.png" />
+    <Content Include="res\icons\ios\icon-small.png" />
+    <Content Include="res\icons\ios\icon-small-2x.png" />
+    <Content Include="res\icons\windows\logo.png" />
+    <Content Include="res\icons\windows\smalllogo.png" />
+    <Content Include="res\icons\windows\Square150x150Logo.scale-240.png" />
+    <Content Include="res\icons\windows\Square44x44Logo.scale-240.png" />
+    <Content Include="res\icons\windows\Square71x71Logo.scale-240.png" />
+    <Content Include="res\icons\windows\storelogo.png" />
+    <Content Include="res\icons\windows\StoreLogo.scale-240.png" />
+    <Content Include="res\icons\windows\Wide310x150Logo.scale-240.png" />
+    <Content Include="res\icons\wp8\icon-62-tile.png" />
+    <Content Include="res\icons\wp8\icon-173-tile.png" />
+    <Content Include="res\native\android\ant.properties" />
+    <Content Include="res\screens\android\screen-hdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-hdpi-portrait.png" />
+    <Content Include="res\screens\android\screen-ldpi-landscape.png" />
+    <Content Include="res\screens\android\screen-ldpi-portrait.png" />
+    <Content Include="res\screens\android\screen-mdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-mdpi-portrait.png" />
+    <Content Include="res\screens\android\screen-xhdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-xhdpi-portrait.png" />
+    <Content Include="res\screens\ios\screen-ipad-landscape.png" />
+    <Content Include="res\screens\ios\screen-ipad-landscape-2x.png" />
+    <Content Include="res\screens\ios\screen-ipad-portrait.png" />
+    <Content Include="res\screens\ios\screen-ipad-portrait-2x.png" />
+    <Content Include="res\screens\ios\screen-iphone-568h-2x.png" />
+    <Content Include="res\screens\ios\screen-iphone-portrait.png" />
+    <Content Include="res\screens\ios\screen-iphone-portrait-2x.png" />
+    <Content Include="res\screens\windows\splashscreen.png" />
+    <Content Include="res\screens\windows\SplashScreen.scale-240.png" />
+    <Content Include="res\screens\wp8\screen-portrait.jpg" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TypeScriptToolsVersion>1.1</TypeScriptToolsVersion>
+    <DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Distribution'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CordovaTools\vs-mda-targets\Microsoft.MDA.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CordovaTools\vs-mda-targets\Microsoft.TypeScript.MDA.targets" />
+  <PropertyGroup>
+    <ProjectUISubcaption>Tools for Apache Cordova</ProjectUISubcaption>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetPlatformIdentifier>MDD</TargetPlatformIdentifier>
+  </PropertyGroup>
+  <Target Name="EnsureBuildPrerequisites">
+    <!-- These errors will trigger if building from inside Visual Studio and requirements could not be determined -->
+    <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(NodeJsDir) == ''" Text="Path to NodeJs could not be determined. Please check that NodeJs has been installed." />
+    <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(MDAVsixDir) == ''" Text="Path to the Visual Studio Extension for Tools for Apache Cordova could not be determined. Please check that the extension has been installed." />
+    <!-- These errors will trigger if building from outside Visual Studio (e.g. command line) and environment variables have not been set -->
+    <Error Condition="$(MDAPropertiesEvaluated) == '' And $(NodeJsDir) == ''" Text="Path to NodeJs has not been specified. Please check that NodeJs has been installed and set the NodeJsDir environment variable before building." />
+    <Error Condition="$(MDAPropertiesEvaluated) == '' And $(MDAVsixDir) == ''" Text="Path to Visual Studio Extension for Tools for Apache Cordova has not been specified. Please install it and set the MDAVsixDir environment variable before building." />
+    <!-- Sanity check that things exist in the specified places. These are more likely to fail if building outside Visual Studio and the required environment variables have not been set, or set incorrectly. -->
+    <Error Condition="!Exists('$(NodeJsDir)') Or !Exists('$(NodeJsDir)\node.exe')" Text="The specified NodeJs directory $(NodeJsDir) either does not exist, or does not contain node.exe. Please check that NodeJs has been installed, and set the NodeJsDir variable to the correct directory." />
+    <Error Condition="!Exists('$(MDAVsixDir)') Or !Exists('$(MDAVsixDir)\packages\vs-mda')" Text="The specified directory to the Visual Studio extension $(MDAVsixDir)\node.exe either does not exist, or does not contain a packages\vs-mda sub-directory. Please check that the extension directory exists and set the MDAVsixDir variable to the correct directory." />
+    <!-- Installs (if necessary) the supporting Nodejs module -->
+    <Exec Command="&quot;$(MDAVsixDir)&quot;\packages\vs-mda\install &quot;$(NodeJsDir)&quot; &quot;$(MDAVsixDir)&quot;\packages\vs-mda" />
+  </Target>
+</Project>

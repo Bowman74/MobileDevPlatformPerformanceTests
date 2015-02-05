@@ -1,0 +1,380 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    (function () {
+        if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement("style");
+            msViewportStyle.appendChild(
+                document.createTextNode("@-ms-viewport{width:auto!important}")
+            );
+            document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+        }
+    })();
+    </script>
+    <meta charset="utf-8"/>
+    <title>PerfTest2Cordova</title>
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="css/icons.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/appframework.css" />
+    <link rel="stylesheet" type="text/css" href="css/lists.css" />
+    <link rel="stylesheet" type="text/css" href="css/forms.css" />
+    <link rel="stylesheet" type="text/css" href="css/buttons.css" />
+    <link rel="stylesheet" type="text/css" href="css/badges.css" />
+    <link rel="stylesheet" type="text/css" href="css/grid.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/android.css" />
+    <link rel="stylesheet" type="text/css" href="css/win8.css" />
+    <link rel="stylesheet" type="text/css" href="css/bb.css" />
+    <link rel="stylesheet" type="text/css" href="css/ios.css" />
+    <link rel="stylesheet" type="text/css" href="css/ios7.css" />
+    <link rel="stylesheet" type="text/css" href="css/tizen.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/plugins/af.actionsheet.css" />
+    <link rel="stylesheet" type="text/css" href="css/plugins/af.popup.css" />
+    <link rel="stylesheet" type="text/css" href="css/plugins/af.scroller.css" />
+    <link rel="stylesheet" type="text/css" href="css/plugins/af.selectBox.css" />
+
+    <script type="text/javascript" charset="utf-8" src="scripts/appframework.min.js"></script>
+
+    <script type="text/javascript">
+        if (!((window.DocumentTouch && document instanceof DocumentTouch) || 'ontouchstart' in window)) {
+            var script = document.createElement("script");
+            script.src = "scripts/plugins/af.desktopBrowsers.js";
+            var tag = $("head").append(script);
+            //$.os.desktop=true;
+        }
+    </script>
+
+    <script type="text/javascript" charset="utf-8" src="scripts/plugins/af.actionsheet.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/plugins/af.css3animate.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/plugins/af.passwordBox.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/plugins/af.scroller.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/plugins/af.selectBox.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/plugins/af.touchEvents.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/plugins/af.touchLayer.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/plugins/af.popup.js"></script>
+    <script type="text/javascript" charset="utf-8" src="./ui/appframework.ui.js"></script>
+    <!-- <script type="text/javascript" charset="utf-8" src="./ui/transitions/all.js"></script> -->
+    <script type="text/javascript" charset="utf-8" src="./ui/transitions/fade.js"></script>
+    <script type="text/javascript" charset="utf-8" src="./ui/transitions/flip.js"></script>
+    <script type="text/javascript" chaappframerset="utf-8" src="./ui/transitions/pop.js"></script>
+    <script type="text/javascript" charset="utf-8" src="./ui/transitions/slide.js"></script>
+    <script type="text/javascript" charset="utf-8" src="./ui/transitions/slideDown.js"></script>
+    <script type="text/javascript" charset="utf-8" src="./ui/transitions/slideUp.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scripts/plugins/af.slidemenu.js"></script>
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+
+    <script src="scripts/index.js"></script>
+    <script  src="/scripts/fastclick.js"></script>
+
+    <script type="text/javascript">
+        /* This function runs once the page is loaded, but intel.xdk is not yet active */
+        //$.ui.animateHeaders=false;
+
+        var search = document.location.search.toLowerCase().replace("?", "");
+        //if(!search)
+        $.ui.useOSThemes = true;
+        if (search.length > 0) //Android fix has too many buggy issues on iOS - can't preview with $.os.android
+        {
+
+            $.ui.useOSThemes = true;
+            if (search == "win8")
+                $.os.ie = true;
+            $.ui.ready(function () {
+                $("#afui").get(0).className = search;
+            });
+        }
+
+        var webRoot = "./";
+        // $.os.android=true;
+        //$.ui.autoLaunch = false;
+        $.ui.openLinksNewTab = false;
+        $.ui.splitview = false;
+
+
+        $(document).ready(function () {
+            $.ui.launch();
+
+        });
+
+
+        /* This code is used to run as soon as intel.xdk activates */
+        var onDeviceReady = function () {
+            intel.xdk.device.setRotateOrientation("portrait");
+            intel.xdk.device.setAutoRotate(false);
+            webRoot = intel.xdk.webRoot + "";
+            //hide splash screen
+            intel.xdk.device.hideSplashScreen();
+            $.ui.blockPageScroll(); //block the page from scrolling at the header/footer
+        };
+        document.addEventListener("intel.xdk.device.ready", onDeviceReady, false);
+
+
+        if ($.os.android || $.os.ie || search == "android") {
+            $.ui.ready(function () {
+                $("#main .list").append("<li><a id='toggleAndroidTheme'>Toggle Theme Color</a></li>");
+                var $el = $("#afui");
+                $("#toggleAndroidTheme").bind("click", function (e) {
+                    if ($el.hasClass("light"))
+                        $el.removeClass("light");
+                    else
+                        $el.addClass("light");
+                });
+            });
+        }
+
+        function cleanUp() {
+            window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function (ex) { }, function (fs) { });
+
+            var db = window.sqlitePlugin.openDatabase({ name: "testDB.db" });
+            db.transaction(function(tx) {
+
+                tx.executeSql('DROP TABLE IF EXISTS testTable');
+                tx.executeSql('CREATE TABLE IF NOT EXISTS testTable ( id INTEGER PRIMARY KEY AUTOINCREMENT, firstName varchar(30), lastName varchar(30), misc TEXT)');
+            }, function(e) {
+                $.ui.popup({
+                    title: "An Error occurred",
+                    message: "Could not create table: " + e.toString(),
+                    doneText: "OK",
+                    cancelOnly: false
+                });
+            });
+
+            var fileName = "testFile.txt";
+            var filePath = cordova.file.dataDirectory;
+            window.resolveLocalFileSystemURL(filePath + fileName, function (file) {
+                window.resolveLocalFileSystemURL(filePath, function (dir) {
+                        dir.getFile(fileName, { create: false }, function (fileEntry) {
+                            fileEntry.remove(function () {
+                                window.resolveLocalFileSystemURL(filePath, function (dir) {
+                                    dir.getFile(fileName, { create: true });
+                                });
+                            });
+                        }, function (e) {
+                            $.ui.popup({
+                                title: "Error",
+                                message: "Could not get file: " + e.code,
+                                doneText: "OK",
+                                cancelOnly: false
+                            });
+                        });
+                });
+            }, function (e) {
+                window.resolveLocalFileSystemURL(filePath, function (dir) {
+                    dir.getFile(fileName, { create: true });
+                });
+            });
+
+            $.ui.popup({
+                title: "Cleanup and Prepare for Tests Successful",
+                message: "Completed test setup",
+                doneText: "OK",
+                cancelOnly: false
+            });
+        }
+
+        function addRecords() {
+            $.ui.blockUI();
+            var maxValue = 999;
+            var successCount = 0;
+            var db = window.sqlitePlugin.openDatabase({ name: "testDB.db" });
+
+            for (var i = 0; i <= maxValue; i++) {
+                var lastName = "person" + i.toString();
+                db.executeSql("INSERT INTO testTable (firstName, lastName, misc) VALUES (?,?,?)", ["test", lastName, "12345678901234567890123456789012345678901234567890"], function (res) {
+                    successCount++;
+                    if (successCount === maxValue) {
+                        $.ui.popup({
+                            title: "Success",
+                            message: "All records written to database",
+                            doneText: "OK",
+                            cancelOnly: false
+                        });
+                        $.ui.unblockUI();
+                    }
+                }, function (e) {
+                    $.ui.popup({
+                        title: "Error",
+                        message: "An error has occurred adding records: " + e.toString(),
+                        doneText: "OK",
+                        cancelOnly: false
+                    });
+                    $.ui.unblockUI();
+                    return;
+                });
+            }
+        }
+
+        function showRecords(div) {
+            var params = document.location.hash.split('/');
+            if (params[1] === "All") {
+                showSqlRecords("SELECT * FROM testTable;");
+            } else {
+                showSqlRecords("SELECT * FROM testTable WHERE lastName LIKE '%1%';");
+            }
+        }
+
+        function showSqlRecords(sql) {
+            var db = window.sqlitePlugin.openDatabase({ name: "testDB.db" });
+            db.executeSql(sql, [], function (res) {
+                try {
+                    var lstRecords = $("#lstRecords");
+                    lstRecords.empty();
+                    var lastValue = res.rows.length;
+                    for (var i = 0; i < lastValue; i++) {
+                        var listItem = "<li>" + res.rows.item(i).firstName + " " + res.rows.item(i).lastName + "</li>";
+                        lstRecords.append(listItem);
+                    }
+                } catch (err) {
+                    alert(err.toString());
+                }
+            });
+        }
+
+        function saveLargeFile() {
+            $.ui.blockUI();
+            window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function (dir) {
+
+                dir.getFile("testFile.txt", { create: false }, function (file) {
+                    file.createWriter(function (fileWriter) {
+
+                        fileWriter.seek(fileWriter.length);
+                        var count = 0;
+                        var line;
+                        var message = "Writing line to file at index: ";
+                        var maxLines = 999;
+                        fileWriter.onwriteend = function(evt) {
+                            count += 1;
+                            if (count <= maxLines) {
+                                line = message + count + "\\n";
+                                fileWriter.write(line);
+                            } else {
+                                $.ui.unblockUI();
+                                $.ui.popup({
+                                    title: "Success",
+                                    message: "All lines written to file.",
+                                    doneText: "OK",
+                                    cancelOnly: false
+                                });
+                            }
+                        };
+                        line = message + count + "\\n";
+                        fileWriter.write(line);
+
+                    }, function (ex) {
+                        $.ui.unblockUI();
+                        $.ui.popup({
+                            title: "Error",
+                            message: "Error occurred creating writer: " + ex.description,
+                            doneText: "OK",
+                            cancelOnly: false
+                        });
+                    });
+                }, function(ex) {
+                    $.ui.unblockUI();
+                    $.ui.popup({
+                        title: "Error",
+                        message: "Error occurred opening file: " + ex.description,
+                        doneText: "OK",
+                        cancelOnly: false
+                    });
+                });
+            }, function(ex) {
+                $.ui.unblockUI();
+                $.ui.popup({
+                    title: "Error",
+                    message: "Error occurred opening directory: " + ex.code,
+                    doneText: "OK",
+                    cancelOnly: false
+                });
+            });
+        }
+
+        function showFile() {
+            window.resolveLocalFileSystemURL(cordova.file.dataDirectory, function (dir) {
+                dir.getFile("testFile.txt", { create: false }, function (file) {
+                    file.file(function(innerFile) {
+                        var reader = new FileReader();
+
+                        reader.onerror = function(e) {
+                            alert("Error");
+                        }
+                        reader.onloadend = function (e) {
+                            var lines = e.target.result.split("\\n");
+                            var lstFileLines = $("#lstFileLines");
+                            lstFileLines.empty();
+                            if (lines.length > 1) {
+                                for (var i = 0; i < lines.length - 2; i++) {
+                                    var listItem = "<li>" + lines[i] + "</li>";
+                                    lstFileLines.append(listItem);
+                                }
+                            }
+                        };
+                        reader.readAsText(innerFile);
+                    }, function(ex) {
+                        $.ui.popup({
+                            title: "Error",
+                            message: "Error occurred opening file: " + ex.description,
+                            doneText: "OK",
+                            cancelOnly: false
+                        });
+                    });
+                }, function (ex) {
+                    $.ui.popup({
+                        title: "Error",
+                        message: "Error occurred opening file: " + ex.description,
+                        doneText: "OK",
+                        cancelOnly: false
+                    });
+                });
+            }, function (ex) {
+                $.ui.popup({
+                    title: "Error",
+                    message: "Error occurred opening directory: " + ex.code,
+                    doneText: "OK",
+                    cancelOnly: false
+                });
+            });
+        }
+
+        $.ui.ready(
+            function () {
+                $.ui.showBackButton = true;
+                FastClick.attach(document.body);
+            }
+        );
+
+    </script>
+</head>
+<body>
+    <div id="afui">
+        <div id="content">
+            <div id="pnlMainMenu" data-title="PerfTest2-Cordova" class="panel" selected="true" data-tab="main_menu" style="height: 100%">
+                <ul class="list" id="lstMenuItems" style="width: 100%; height: 100%">
+                    <li onclick="cleanUp()">Clean up and prepare for tests</li>
+                    <li onclick="addRecords()">Add 1,000 records to SQLite</li>
+                    <li><a href="#pnlShotSqLiteRecords/All" id="sqLite" data-persist-ajax="true">Display all records</a></li>
+                    <li><a href="#pnlShotSqLiteRecords/Only1" id="sqLiteOnly1" data-persist-ajax="true">Display all records that contain 1</a></li>
+                    <li onclick="saveLargeFile()">Save large file</li>
+                    <li><a href="#pnlDisplayFile" id="displayFile" data-persist-ajax="true">Load and display large file</a></li>
+                </ul>
+            </div>
+            <div id="pnlShotSqLiteRecords" data-load="showRecords" data-title="SQLite" class="panel" data-nav="main_nav">
+                <ul class="list" id="lstRecords" style="width: 100%; overflow: scroll"></ul>
+            </div>
+            <div id="pnlDisplayFile" data-load="showFile" data-title="TextFile" class="panel" data-nav="main_nav">
+                <ul class="list" id="lstFileLines" style="width: 100%; overflow: scroll"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

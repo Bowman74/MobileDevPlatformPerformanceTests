@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="com.vandammeford.cordova.perftest2" version="0.0.1.0" xmlns="http://www.w3.org/ns/widgets">
+  <name>Performance Test 2 - Cordova</name>
+  <description />
+  <author href="http://nolanlawson.com" email="nolan@nolanlawson.com">Kevin Ford</author>
+  <content src="index.html" />
+  <access origin="*" />
+  <preference name="BackupWebStorage" value="none" />
+  <preference name="deployment-target" value="8" />
+  <preference name="android-minSdkVersion" value="17" />
+  <preference name="android-targetSdkVersion" value="21" />
+  <vs:plugin name="com.brodysoft.sqlitePlugin" version="1.0.3" />
+  <vs:plugin name="org.apache.cordova.file" version="1.3.1" />
+  <vs:plugin name="com.brodysoft.sqlitePlugin" version="1.0.3" />
+  <vs:platformSpecificValues />
+</widget>

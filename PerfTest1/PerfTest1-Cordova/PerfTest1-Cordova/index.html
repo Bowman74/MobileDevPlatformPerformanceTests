@@ -196,25 +196,25 @@
             client.getTable("Registration")
                 .take(1000)
                 .read()
-                .done(function (results) {
-                    var lstRegs = $("#lstRegistrations");
-                    lstRegs.empty();
-                    for (var i = 0; i < results.length; i++) {
-                        var listItem = "<li>" + results[i]["screenname"] + "</li>";
-                        lstRegs.append(listItem);
+                .done(function(results) {
+                        var lstRegs = $("#lstRegistrations");
+                        lstRegs.empty();
+                        for (var i = 0; i < results.length; i++) {
+                            var listItem = "<li>" + results[i]["screenname"] + "</li>";
+                            lstRegs.append(listItem);
+                        }
+                        lstRegs.refresh();
+                        $.refresh();
                     }
-                    lstRegs.refresh();
-                    $.refresh();
-                }
-            )
-            .error(function (err) {
-                $.ui.popup({
-                    title: "Error fetching list",
-                    message: err,
-                    doneText: "OK",
-                    cancelOnly: false
+                )
+                .error(function(err) {
+                    $.ui.popup({
+                        title: "Error fetching list",
+                        message: err,
+                        doneText: "OK",
+                        cancelOnly: false
+                    });
                 });
-            })
         };
 
         function clearAzureList() {
