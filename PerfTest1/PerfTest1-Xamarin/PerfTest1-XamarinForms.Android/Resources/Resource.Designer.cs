@@ -26,6 +26,8 @@ namespace PerfTest1_XamarinForms
 		
 		public static void UpdateIdValues()
 		{
+			global::Xamarin.Forms.Platform.Resource.String.ApplicationName = global::PerfTest1_XamarinForms.Resource.String.ApplicationName;
+			global::Xamarin.Forms.Platform.Resource.String.Hello = global::PerfTest1_XamarinForms.Resource.String.Hello;
 		}
 		
 		public partial class Attribute

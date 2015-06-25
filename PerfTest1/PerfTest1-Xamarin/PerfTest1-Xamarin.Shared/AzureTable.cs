@@ -8,7 +8,7 @@ namespace PerfTest1Xamarin
     {
         private static MobileServiceClient mobileService = new MobileServiceClient(
             "https://malor2014jsmobileservice.azure-mobile.net/",
-            "some key");
+			"pdFskoBXcwzaDNTpuRWdVRhUIRYcFF14");
 
         public static async Task<IList<Registration>> GetRegistrationsAsync()
         {

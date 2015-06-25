@@ -37,3 +37,4 @@ D:\Projects\GitHub\MobileDevPlatformPerformanceTests\PerfTest1\PerfTest1-Xamarin
 D:\Projects\GitHub\MobileDevPlatformPerformanceTests\PerfTest1\PerfTest1-Xamarin\PerfTest1-XamarinForms.Android\obj\Debug\res\drawable\icon.png
 D:\Projects\GitHub\MobileDevPlatformPerformanceTests\PerfTest1\PerfTest1-Xamarin\PerfTest1-XamarinForms.Android\obj\Debug\R.cs.flag
 D:\Projects\GitHub\MobileDevPlatformPerformanceTests\PerfTest1\PerfTest1-Xamarin\PerfTest1-XamarinForms.Android\obj\Debug\uploadflags.txt
+D:\Projects\GitHub\MobileDevPlatformPerformanceTests\PerfTest1\PerfTest1-Xamarin\PerfTest1-XamarinForms.Android\bin\Debug\Xamarin.Forms.Platform.dll

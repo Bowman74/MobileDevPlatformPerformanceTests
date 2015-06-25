@@ -62,7 +62,6 @@ Global
 		{982A4350-897F-4B9A-B8AB-337560FFB3BC}.Distribution|Android.Deploy.0 = Distribution|Android
 		{982A4350-897F-4B9A-B8AB-337560FFB3BC}.Distribution|iOS.ActiveCfg = Distribution|iOS
 		{982A4350-897F-4B9A-B8AB-337560FFB3BC}.Distribution|iOS.Build.0 = Distribution|iOS
-		{982A4350-897F-4B9A-B8AB-337560FFB3BC}.Distribution|iOS.Deploy.0 = Distribution|iOS
 		{982A4350-897F-4B9A-B8AB-337560FFB3BC}.Distribution|Windows Phone (Universal).ActiveCfg = Distribution|Windows Phone (Universal)
 		{982A4350-897F-4B9A-B8AB-337560FFB3BC}.Distribution|Windows Phone (Universal).Build.0 = Distribution|Windows Phone (Universal)
 		{982A4350-897F-4B9A-B8AB-337560FFB3BC}.Distribution|Windows Phone (Universal).Deploy.0 = Distribution|Windows Phone (Universal)
@@ -83,7 +82,6 @@ Global
 		{982A4350-897F-4B9A-B8AB-337560FFB3BC}.Distribution|Windows-x86.Deploy.0 = Distribution|Windows-x86
 		{982A4350-897F-4B9A-B8AB-337560FFB3BC}.Release|Android.ActiveCfg = Release|Android
 		{982A4350-897F-4B9A-B8AB-337560FFB3BC}.Release|Android.Build.0 = Release|Android
-		{982A4350-897F-4B9A-B8AB-337560FFB3BC}.Release|Android.Deploy.0 = Release|Android
 		{982A4350-897F-4B9A-B8AB-337560FFB3BC}.Release|iOS.ActiveCfg = Release|iOS
 		{982A4350-897F-4B9A-B8AB-337560FFB3BC}.Release|iOS.Build.0 = Release|iOS
 		{982A4350-897F-4B9A-B8AB-337560FFB3BC}.Release|iOS.Deploy.0 = Release|iOS

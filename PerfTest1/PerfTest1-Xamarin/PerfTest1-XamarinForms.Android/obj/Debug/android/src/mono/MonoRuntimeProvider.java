@@ -39,7 +39,7 @@ public class MonoRuntimeProvider
 		}
 		try {
 			android.content.pm.ApplicationInfo runtimeInfo = context.getPackageManager ().getApplicationInfo ("Mono.Android.DebugRuntime", 0);
-			mono.MonoPackageManager.LoadApplication (context, runtimeInfo.dataDir,
+			mono.MonoPackageManager.LoadApplication (context, runtimeInfo,
 					apiInfo != null
 					? new String[]{runtimeInfo.sourceDir, apiInfo.sourceDir, context.getApplicationInfo ().sourceDir}
 					: new String[]{runtimeInfo.sourceDir, context.getApplicationInfo ().sourceDir});

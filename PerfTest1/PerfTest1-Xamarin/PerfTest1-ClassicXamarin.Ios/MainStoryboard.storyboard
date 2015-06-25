@@ -21,7 +21,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="46">
-                                        <rect key="frame" x="0.0" y="22" width="736" height="44"/>
+                                        <rect key="frame" x="0.0" y="22" width="288" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="47" tableViewCell="46">
                                             <rect key="frame" x="0.0" y="0.0" width="736" height="43.5"/>
@@ -33,7 +33,7 @@
                                         </variation>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="48">
-                                        <rect key="frame" x="0.0" y="66" width="736" height="44"/>
+                                        <rect key="frame" x="0.0" y="66" width="288" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="49" tableViewCell="48">
                                             <rect key="frame" x="0.0" y="0.0" width="736" height="43.5"/>
@@ -42,7 +42,7 @@
                                         </view>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="50">
-                                        <rect key="frame" x="0.0" y="110" width="736" height="44"/>
+                                        <rect key="frame" x="0.0" y="110" width="288" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="51" tableViewCell="50">
                                             <rect key="frame" x="0.0" y="0.0" width="736" height="43.5"/>
@@ -55,9 +55,20 @@
                                     <rect key="frame" x="12" y="13" width="736" height="364"/>
                                 </variation>
                                 <constraints>
-                                    <constraint id="94" firstAttribute="width" constant="736"/>
                                     <constraint id="95" firstAttribute="height" constant="364"/>
+                                    <constraint id="111" firstItem="45" firstAttribute="width" constant="288"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="12" y="28" width="288" height="364"/>
+                                    <mask key="constraints">
+                                        <include reference="111"/>
+                                    </mask>
+                                </variation>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="111"/>
+                                    </mask>
+                                </variation>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="52" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="12" y="400" width="298" height="30"/>
@@ -147,7 +158,7 @@
                 <tabBarController id="4" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="5">
-                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -162,11 +173,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first.png" width="16" height="16"/>
-        <image name="second.png" width="16" height="16"/>
+        <image name="first.png" width="30" height="30"/>
+        <image name="second.png" width="30" height="30"/>
         <image name="Default-568h.png" width="640" height="1136"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedScreenMetrics key="destination" type="iPad"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

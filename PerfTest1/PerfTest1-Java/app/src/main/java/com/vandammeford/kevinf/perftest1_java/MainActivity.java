@@ -42,7 +42,7 @@ public class MainActivity extends Activity implements View.OnClickListener  {
         try {
             mobileServicesClient = new MobileServiceClient(
                     "https://malor2014jsmobileservice.azure-mobile.net/",
-                    "some key",
+                    "pdFskoBXcwzaDNTpuRWdVRhUIRYcFF14",
                     this
             );
         } catch (MalformedURLException ex) {

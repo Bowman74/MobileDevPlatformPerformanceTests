@@ -60,8 +60,8 @@ namespace PerfTest1_ClassicXamarin.Android
 
         private async Task FillListAsync()
         {
-            var registrations = await AzureTable.GetRegistrationsAsync();
-            RunOnUiThread(() => ResetList(registrations));
+			var registrations = await AzureTable.GetRegistrationsAsync();
+			RunOnUiThread(() => ResetList(registrations));
         }
 
         private void ResetList(IList<Registration> registrations)

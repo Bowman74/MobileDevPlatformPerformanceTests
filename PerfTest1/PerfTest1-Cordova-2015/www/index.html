@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PerfTest1Cordova2015</title>
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <link href="AppFramework/af.ui.base.css" rel="stylesheet" />
+    <link href="AppFramework/af.ui.css" rel="stylesheet" />
+    <script src="AppFramework/appframework.ui.min.js"></script>
+    <link href="AppFramework/icons.min.css" rel="stylesheet" />
+    <script src="scripts/fastclick.js"></script>
+
+    <!-- PerfTest1Cordova2015 references -->
+    <link href="css/index.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.afui.launch();
+        });
+
+        $.afui.ready(function () {
+            FastClick.attach(document.body);
+            $.afui.setBackButtonVisibility(false);
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        var webRoot = "./";
+        function getPrimesFromSieve(maxValue) {
+            var primes = new Uint8Array(new ArrayBuffer(Number(maxValue)));
+            for (var i = 0; i <=maxValue; i++) {
+                primes[i] = 0;
+            }
+            var largestPrimeFound = 1;
+
+            for (i = 2; i <= maxValue; i++) {
+                if (primes[i - 1] == 0) {
+                    primes[i - 1] = 1;
+                    largestPrimeFound = i;
+                }
+
+                var c = 2;
+                var mul = i * c;
+                for (; mul <= maxValue;) {
+                    primes[mul - 1] = 1;
+                    c++;
+                    mul = i * c;
+                }
+            }
+            return largestPrimeFound;
+        }
+
+        function showLargestPrime() {
+            var textValue = $("#txtMaxPrime")[0].value;
+            if (isNumber(textValue)) {
+                try {
+                    var maxPrime = getPrimesFromSieve(textValue);
+                    $.afui.popup({
+                        title: "Prime Calculation Complete",
+                        message: "Largest prime found: " + maxPrime,
+                        doneText: "OK",
+                        cancelOnly: false
+                    });
+
+                } catch (err) {
+                    $.afui.popup({
+                        title: "An error has occurred",
+                        message: err.message,
+                        doneText: "OK",
+                        cancelOnly: false
+                    });
+                }
+
+            } else {
+                $.afui.popup({
+                    title: "Prime Calculation Error",
+                    message: "Must enter a numeric max value: " + textValue,
+                    doneText: "OK",
+                    cancelOnly: false
+                });
+            }
+        }
+
+        function isNumber(n) {
+            return !isNaN(parseFloat(n)) && isFinite(n);
+        }
+
+        function showAzureList() {
+            var client = new WindowsAzure.MobileServiceClient("https://malor2014jsmobileservice.azure-mobile.net/", "pdFskoBXcwzaDNTpuRWdVRhUIRYcFF14");
+
+            client.getTable("Registration")
+                .take(1000)
+                .read()
+                .done(function (results) {
+
+                    var lstRegs = $("#lstRegistrations");
+                    lstRegs.empty();
+                    for (var i = 0; i < results.length; i++) {
+                        var listItem = "<li>" + results[i]["screenname"] + "</li>";
+                        lstRegs.append(listItem);
+                    }
+                }, function (err) {
+                    $.afui.popup({
+                        title: "Error Occurred",
+                        message: "Error: " + err,
+                        doneText: "OK",
+                        cancelOnly: false
+                    });
+                });
+        }
+
+        function clearAzureList() {
+            var lstRegs = $("#lstRegistrations");
+            lstRegs.empty();
+        }
+    </script>
+</head>
+<body>
+    <div class="view" id="mainView">
+        <div class="pages">
+            <div id="pnlAzureList" data-title="Azure List" class="panel" selected="true" data-tab="azure_list" style="height: 100%" js-scrolling="true">
+                <a class="button" onclick=" clearAzureList() ">Clear</a>
+                <br />
+                <a class="button" onclick=" showAzureList() ">Fetch Results</a>
+                <br />
+                <ul class="list" id="lstRegistrations" style="width: 100%; overflow: scroll"></ul>
+            </div>
+            <div id="pnlCalcPrimes" data-title="Calc Primes" class="panel" data-nav="main_nav">
+                <h1>Max Number To Search:</h1>
+                <input id="txtMaxPrime" type="text">
+                <a class="button" onclick="showLargestPrime()">Calculate Primes</a>
+            </div>
+        </div>
+        <footer>
+            <a href="#pnlAzureList" id="azure_list">Azure List</a>
+            <a href="#pnlCalcPrimes" id="calc_primes">Calc Primes</a>
+        </footer>
+    </div>
+
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>

@@ -19,7 +19,7 @@ public class MonoRuntimeProvider
 	public void attachInfo (android.content.Context context, android.content.pm.ProviderInfo info)
 	{
 		// Mono Runtime Initialization {{{
-		mono.MonoPackageManager.LoadApplication (context, context.getApplicationInfo ().dataDir, new String[]{context.getApplicationInfo ().sourceDir});
+		mono.MonoPackageManager.LoadApplication (context, context.getApplicationInfo (), new String[]{context.getApplicationInfo ().sourceDir});
 		// }}}
 		super.attachInfo (context, info);
 	}

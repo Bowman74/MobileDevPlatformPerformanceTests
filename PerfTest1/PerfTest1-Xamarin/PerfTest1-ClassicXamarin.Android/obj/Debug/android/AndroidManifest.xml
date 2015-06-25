@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="PerfTest1_ClassicXamarin.Android" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
-  <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="17" />
+  <uses-sdk android:minSdkVersion="17" />
   <application android:label="PerfTest1-ClassicXamarin.Android" android:icon="@drawable/icon" android:name="mono.android.app.Application" android:debuggable="true">
-    <activity android:icon="@drawable/icon" android:label="PerfTest1_ClassicXamarin.Android" android:name="perftest1_classicxamarin.android.MainActivity">
+    <activity android:icon="@drawable/icon" android:label="PerfTest1_ClassicXamarin.Android" android:name="md51f5ae56bfc08828148f3b37efb79dddf.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:label="Web Authenticator" android:name="xamarin.auth._mobileservices.FormAuthenticatorActivity" />
-    <activity android:label="Web Authenticator" android:name="xamarin.auth._mobileservices.WebAuthenticatorActivity" />
+    <activity android:label="Web Authenticator" android:name="md588920fb9403ed228b036d6919cddd329.FormAuthenticatorActivity" />
+    <activity android:label="Web Authenticator" android:name="md588920fb9403ed228b036d6919cddd329.WebAuthenticatorActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="PerfTest1_ClassicXamarin.Android.mono.MonoRuntimeProvider.__mono_init__" />
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>

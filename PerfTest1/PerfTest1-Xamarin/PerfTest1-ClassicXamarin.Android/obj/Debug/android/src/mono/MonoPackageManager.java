@@ -17,7 +17,7 @@ public class MonoPackageManager {
 	static Object lock = new Object ();
 	static boolean initialized;
 
-	public static void LoadApplication (Context context, String runtimeDataDir, String[] apks)
+	public static void LoadApplication (Context context, ApplicationInfo runtimePackage, String[] apks)
 	{
 		synchronized (lock) {
 			if (!initialized) {
@@ -26,13 +26,13 @@ public class MonoPackageManager {
 				String language     = locale.getLanguage () + "-" + locale.getCountry ();
 				String filesDir     = context.getFilesDir ().getAbsolutePath ();
 				String cacheDir     = context.getCacheDir ().getAbsolutePath ();
-				String dataDir      = context.getApplicationInfo ().dataDir + "/lib";
+				String dataDir      = getNativeLibraryPath (context);
 				ClassLoader loader  = context.getClassLoader ();
 
 				Runtime.init (
 						language,
 						apks,
-						runtimeDataDir,
+						getNativeLibraryPath (runtimePackage),
 						new String[]{
 							filesDir,
 							cacheDir,
@@ -47,6 +47,18 @@ public class MonoPackageManager {
 				initialized = true;
 			}
 		}
+	}
+
+	static String getNativeLibraryPath (Context context)
+	{
+	    return getNativeLibraryPath (context.getApplicationInfo ());
+	}
+
+	static String getNativeLibraryPath (ApplicationInfo ainfo)
+	{
+		if (android.os.Build.VERSION.SDK_INT >= 9)
+			return ainfo.nativeLibraryDir;
+		return ainfo.dataDir + "/lib";
 	}
 
 	public static String[] getAssemblies ()
