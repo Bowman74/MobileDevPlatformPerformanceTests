@@ -5,11 +5,11 @@ using Xamarin.Forms;
 
 namespace PerfTest1_XamarinForms
 {
-    public class App
+    public class App : Application
     {
-        public static Page GetMainPage()
-        {
-            return new Forms.MainPage();
-        }
+		public App()
+		{
+			MainPage = new NavigationPage(new Forms.MainPage());
+		}
     }
 }

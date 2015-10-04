@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    client  = [MSClient clientWithApplicationURLString:@"https://malor2014jsmobileservice.azure-mobile.net/" applicationKey:@"some key"];
+    client  = [MSClient clientWithApplicationURLString:@"https://malor2014jsmobileservice.azure-mobile.net/" applicationKey:@"pdFskoBXcwzaDNTpuRWdVRhUIRYcFF14"];
 }
 
 -(IBAction) btnClearClicked:(id)sender {
@@ -39,11 +39,11 @@
     
     query.fetchLimit = 1000;
     
-    [query readWithCompletion:^(NSArray *items, NSInteger totalCount, NSError *error) {
+    [query readWithCompletion:^(MSQueryResult *items, NSError *error) {
         if(error) {
             NSLog(@"ERROR %@", error);
         } else {
-            tableData = items;
+            tableData = items.items;
             [self.grdRegistrations reloadData];
         }
     }];

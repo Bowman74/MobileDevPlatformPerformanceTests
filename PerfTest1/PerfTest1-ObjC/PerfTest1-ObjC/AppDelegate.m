@@ -17,8 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.client = [MSClient clientWithApplicationURLString:@"https://malor2014jsmobileservice.azure-mobile.net/"
-                                            applicationKey:@"pdFskoBXcwzaDNTpuRWdVRhUIRYcFF14"];
+
     return YES;
 }
 

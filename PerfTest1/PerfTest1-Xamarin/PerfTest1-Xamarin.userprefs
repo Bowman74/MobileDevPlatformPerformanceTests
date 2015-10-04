@@ -1,0 +1,31 @@
+﻿<Properties StartupItem="PerfTest1-XamarinForms.Ios/PerfTest1-XamarinForms.Ios.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.kevin's iPhone" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PerfTest1-XamarinForms.Android/MainActivity.cs">
+    <Files>
+      <File FileName="PerfTest1-XamarinForms.Ios/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="PerfTest1-XamarinForms.Shared/App.cs" Line="15" Column="2" />
+      <File FileName="PerfTest1-XamarinForms.Shared/Forms/CalcPrimes.xaml" Line="12" Column="15" />
+      <File FileName="PerfTest1-XamarinForms.Android/MainActivity.cs" Line="25" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PerfTest1-Xamarin" expanded="True">
+            <Node name="PerfTest1-ClassicXamarin.Ios" expanded="True">
+              <Node name="ComponentReferenceFolder" expanded="True" />
+              <Node name="Packages" expanded="True" />
+            </Node>
+            <Node name="PerfTest1-XamarinForms.Android" selected="True" />
+            <Node name="PerfTest1-XamarinForms.Shared" expanded="True">
+              <Node name="Forms" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

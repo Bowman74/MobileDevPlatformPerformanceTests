@@ -11,7 +11,7 @@ using Xamarin.Forms.Platform.Android;
 namespace PerfTest1_XamarinForms.Android
 {
     [Activity(Label = "PerfTest1_XamarinForms.Android", MainLauncher = true, Icon = "@drawable/icon", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : AndroidActivity
+    public class MainActivity : FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
@@ -19,8 +19,7 @@ namespace PerfTest1_XamarinForms.Android
 
             Xamarin.Forms.Forms.Init(this, bundle);
 
-            SetPage(App.GetMainPage());
+            LoadApplication(new App());
         }
     }
 }
-

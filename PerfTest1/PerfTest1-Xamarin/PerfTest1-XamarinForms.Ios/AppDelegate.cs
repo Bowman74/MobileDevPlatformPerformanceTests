@@ -5,6 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 using Xamarin.Forms;
+using Xamarin.Forms.Platform.iOS;
 
 namespace PerfTest1_XamarinForms.Ios
 {
@@ -12,7 +13,7 @@ namespace PerfTest1_XamarinForms.Ios
     // User Interface of the application, as well as listening (and optionally responding) to 
     // application events from iOS.
     [Register("AppDelegate")]
-    public partial class AppDelegate : UIApplicationDelegate
+    public partial class AppDelegate : FormsApplicationDelegate
     {
         // class-level declarations
         UIWindow window;
@@ -33,12 +34,9 @@ namespace PerfTest1_XamarinForms.Ios
             //Line needed so platform specific DLL is included.
             var platform = new Microsoft.WindowsAzure.MobileServices.CurrentPlatform();
 
-            var mainForm = App.GetMainPage();
-            window.RootViewController = mainForm.CreateViewController();
+			LoadApplication(new App());
 
-            window.MakeKeyAndVisible();
-
-            return true;
+			return base.FinishedLaunching(app, options);
         }
     }
 }

@@ -20,8 +20,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-
-
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,27 +27,37 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(BOOL)textFieldShouldReturn:(UITextField *)textfield {
+    [textfield resignFirstResponder];
+    return YES;
+}
+
 -(IBAction) btnCalcPrimesClicked:(id)sender {
+    //[self performSelector:@selector(createViewController) withObject:nil afterDelay:0];
     NSScanner* scan = [NSScanner scannerWithString:txtMaxPrime.text];
     int val;
     
     if ([scan scanInt:&val] && [scan isAtEnd]) {
         int returnValue = [self getPrimesFromSieve: val];
         NSString *returnString = [NSString stringWithFormat:@"%d", returnValue];
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Prime Calculation Complete"
-                                                        message:[NSString stringWithFormat:@"%@%@", @"Largest prime found: ", returnString]
-                                                       delegate:self
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        [alert show];
-    } else {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Prime Calculation Error"
-                                                        message:[NSString stringWithFormat:@"%@%@", @"Must enter a numeric max value: ", txtMaxPrime.text]
-                                                       delegate:self
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Prime Calculation Complete" message:[NSString stringWithFormat:@"%@%@", @"Largest prime found: ", returnString] preferredStyle: UIAlertControllerStyleAlert];
         
-        [alert show];
+        UIAlertAction *alertAction = [UIAlertAction actionWithTitle: @"Dismiss"
+                                                              style: UIAlertActionStyleDestructive
+                                                            handler: NULL];
+        
+        [alert addAction: alertAction];
+        [self presentViewController: alert animated: YES completion: nil];
+    } else {
+        
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Prime Calculation Error" message:[NSString stringWithFormat:@"%@%@", @"Must enter a numeric max value: ", txtMaxPrime.text] preferredStyle: UIAlertControllerStyleAlert];
+        
+        UIAlertAction *alertAction = [UIAlertAction actionWithTitle: @"Dismiss"
+                                                              style: UIAlertActionStyleDestructive
+                                                            handler: NULL];
+        
+        [alert addAction: alertAction];
+        [self presentViewController: alert animated: YES completion: nil];
     }
 }
 
@@ -88,10 +96,6 @@
     }
     
     return largestPrimeFound;
-}
-
-- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
-    NSLog(@"Really?");
 }
 
 @end

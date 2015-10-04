@@ -6,16 +6,25 @@
 #define WindowsAzureMobileServices_WindowsAzureMobileServices_h
 
 #import "MSClient.h"
-#import "MSTable.h"
-#import "MSQuery.h"
-#import "MSUser.h"
-#import "MSFilter.h"
+#import "MSCoreDataStore.h"
+#import "MSDateOffset.h"
 #import "MSError.h"
+#import "MSFilter.h"
 #import "MSLoginController.h"
+#import "MSPullSettings.h"
 #import "MSPush.h"
+#import "MSQuery.h"
+#import "MSQueryResult.h"
+#import "MSSyncContext.h"
+#import "MSSyncContextReadResult.h"
+#import "MSSyncTable.h"
+#import "MSTable.h"
+#import "MSTableOperation.h"
+#import "MSTableOperationError.h"
+#import "MSUser.h"
 
-#define WindowsAzureMobileServicesSdkMajorVersion 1
+#define WindowsAzureMobileServicesSdkMajorVersion 2
 #define WindowsAzureMobileServicesSdkMinorVersion 2
-#define WindowsAzureMobileServicesSdkBuildVersion 20910
+#define WindowsAzureMobileServicesSdkBuildVersion 30921
 
 #endif

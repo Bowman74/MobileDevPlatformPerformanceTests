@@ -1,61 +1,72 @@
-D:\Projects\GitHub\MobileDevPlatformPerformanceTests\PerfTest1\PerfTest1-Xamarin\PerfTest1-XamarinForms.Android\bin\Debug\PerfTest1XamarinForms.dll
-D:\Projects\GitHub\MobileDevPlatformPerformanceTests\PerfTest1\PerfTest1-Xamarin\packages\Xamarin.Forms.1.4.2.6359\lib\MonoAndroid10\FormsViewGroup.dll
-D:\Projects\GitHub\MobileDevPlatformPerformanceTests\PerfTest1\PerfTest1-Xamarin\Components\azure-mobile-services-1.3.0\lib\android\Microsoft.WindowsAzure.Mobile.dll
-D:\Projects\GitHub\MobileDevPlatformPerformanceTests\PerfTest1\PerfTest1-Xamarin\Components\azure-mobile-services-1.3.0\lib\android\Microsoft.WindowsAzure.Mobile.Ext.dll
-D:\Projects\GitHub\MobileDevPlatformPerformanceTests\PerfTest1\PerfTest1-Xamarin\Components\azure-mobile-services-1.3.0\lib\android\Newtonsoft.Json.dll
-D:\Projects\GitHub\MobileDevPlatformPerformanceTests\PerfTest1\PerfTest1-Xamarin\Components\azure-mobile-services-1.3.0\lib\android\System.Net.Http.Extensions.dll
-D:\Projects\GitHub\MobileDevPlatformPerformanceTests\PerfTest1\PerfTest1-Xamarin\Components\azure-mobile-services-1.3.0\lib\android\System.Net.Http.Primitives.dll
-D:\Projects\GitHub\MobileDevPlatformPerformanceTests\PerfTest1\PerfTest1-Xamarin\packages\Xamarin.Android.Support.v4.22.1.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll
-D:\Projects\GitHub\MobileDevPlatformPerformanceTests\PerfTest1\PerfTest1-Xamarin\packages\Xamarin.Forms.1.4.2.6359\lib\MonoAndroid10\Xamarin.Forms.Core.dll
-D:\Projects\GitHub\MobileDevPlatformPerformanceTests\PerfTest1\PerfTest1-Xamarin\packages\Xamarin.Forms.1.4.2.6359\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll
-D:\Projects\GitHub\MobileDevPlatformPerformanceTests\PerfTest1\PerfTest1-Xamarin\packages\Xamarin.Forms.1.4.2.6359\lib\MonoAndroid10\Xamarin.Forms.Platform.dll
-D:\Projects\GitHub\MobileDevPlatformPerformanceTests\PerfTest1\PerfTest1-Xamarin\packages\Xamarin.Forms.1.4.2.6359\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Collections.Concurrent.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Collections.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ComponentModel.Annotations.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ComponentModel.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ComponentModel.EventBasedAsync.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Diagnostics.Contracts.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Diagnostics.Debug.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Diagnostics.Tools.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Diagnostics.Tracing.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Dynamic.Runtime.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Globalization.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.IO.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Linq.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Linq.Expressions.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Linq.Parallel.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Linq.Queryable.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Net.NetworkInformation.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Net.Primitives.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Net.Requests.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ObjectModel.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Reflection.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Reflection.Emit.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Reflection.Emit.ILGeneration.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Reflection.Emit.Lightweight.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Reflection.Extensions.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Reflection.Primitives.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Resources.ResourceManager.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.Extensions.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.InteropServices.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.InteropServices.WindowsRuntime.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.Numerics.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.Serialization.Json.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.Serialization.Primitives.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Runtime.Serialization.Xml.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Security.Principal.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ServiceModel.Http.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ServiceModel.Primitives.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ServiceModel.Security.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Text.Encoding.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Text.Encoding.Extensions.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Text.RegularExpressions.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Threading.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Threading.Tasks.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Threading.Tasks.Parallel.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Threading.Timer.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Xml.ReaderWriter.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Xml.XDocument.dll
-C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Xml.XmlSerializer.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/PerfTest1XamarinForms.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/Microsoft.WindowsAzure.Mobile.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/Microsoft.WindowsAzure.Mobile.Ext.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/Mono.Android.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/mscorlib.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/Newtonsoft.Json.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Net.Http.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Net.Http.Extensions.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Net.Http.Primitives.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Xml.Linq.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Xml.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/Xamarin.Forms.Platform.Android.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/FormsViewGroup.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/Xamarin.Forms.Core.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/Xamarin.Forms.Xaml.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/Xamarin.Forms.Platform.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/Xamarin.Android.Support.v4.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Core.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Collections.Concurrent.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Collections.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.ComponentModel.Annotations.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.ComponentModel.EventBasedAsync.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.ComponentModel.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Diagnostics.Contracts.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Diagnostics.Debug.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Diagnostics.Tools.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Dynamic.Runtime.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Globalization.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.IO.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Linq.Expressions.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Linq.Parallel.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Linq.Queryable.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Linq.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Net.NetworkInformation.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Net.Primitives.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Net.Requests.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.ObjectModel.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Reflection.Emit.ILGeneration.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Reflection.Emit.Lightweight.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Reflection.Emit.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Reflection.Extensions.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Reflection.Primitives.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Reflection.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Resources.ResourceManager.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Runtime.Extensions.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Runtime.InteropServices.WindowsRuntime.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Runtime.InteropServices.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Runtime.Numerics.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Runtime.Serialization.Json.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Runtime.Serialization.Primitives.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Runtime.Serialization.Xml.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Runtime.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Security.Principal.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.ServiceModel.Http.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.ServiceModel.Primitives.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Text.Encoding.Extensions.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Text.Encoding.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Text.RegularExpressions.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Threading.Tasks.Parallel.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Threading.Tasks.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Threading.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Xml.ReaderWriter.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Xml.XDocument.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Xml.XmlSerializer.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/Microsoft.CSharp.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/Mono.CSharp.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Runtime.Serialization.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.ComponentModel.DataAnnotations.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.Numerics.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.ComponentModel.Composition.dll
+/Users/kevinford/Documents/projects/MobileDevPlatformPerformanceTests/PerfTest1/PerfTest1-Xamarin/PerfTest1-XamarinForms.Android/obj/Debug/assemblies/System.ServiceModel.dll

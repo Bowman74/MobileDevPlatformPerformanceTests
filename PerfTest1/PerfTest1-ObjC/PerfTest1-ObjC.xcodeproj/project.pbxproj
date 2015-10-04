@@ -13,9 +13,8 @@
 		08A2D2B91A2E45FB00D07A03 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A2D2B81A2E45FB00D07A03 /* SecondViewController.m */; };
 		08A2D2BC1A2E45FB00D07A03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08A2D2BA1A2E45FB00D07A03 /* Main.storyboard */; };
 		08A2D2BE1A2E45FB00D07A03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A2D2BD1A2E45FB00D07A03 /* Images.xcassets */; };
-		08A2D2C11A2E45FB00D07A03 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A2D2BF1A2E45FB00D07A03 /* LaunchScreen.xib */; };
 		08A2D2CD1A2E45FB00D07A03 /* PerfTest1_ObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A2D2CC1A2E45FB00D07A03 /* PerfTest1_ObjCTests.m */; };
-		08A2D2D71A320F4200D07A03 /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A2D2D61A320F4200D07A03 /* WindowsAzureMobileServices.framework */; };
+		08B596BA1BC059640020C769 /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B596B91BC059640020C769 /* WindowsAzureMobileServices.framework */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +39,10 @@
 		08A2D2B81A2E45FB00D07A03 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		08A2D2BB1A2E45FB00D07A03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08A2D2BD1A2E45FB00D07A03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		08A2D2C01A2E45FB00D07A03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		08A2D2C61A2E45FB00D07A03 /* PerfTest1-ObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PerfTest1-ObjCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08A2D2CB1A2E45FB00D07A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08A2D2CC1A2E45FB00D07A03 /* PerfTest1_ObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerfTest1_ObjCTests.m; sourceTree = "<group>"; };
-		08A2D2D61A320F4200D07A03 /* WindowsAzureMobileServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WindowsAzureMobileServices.framework; sourceTree = "<group>"; };
+		08B596B91BC059640020C769 /* WindowsAzureMobileServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WindowsAzureMobileServices.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08A2D2D71A320F4200D07A03 /* WindowsAzureMobileServices.framework in Frameworks */,
+				08B596BA1BC059640020C769 /* WindowsAzureMobileServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +94,6 @@
 				08A2D2B81A2E45FB00D07A03 /* SecondViewController.m */,
 				08A2D2BA1A2E45FB00D07A03 /* Main.storyboard */,
 				08A2D2BD1A2E45FB00D07A03 /* Images.xcassets */,
-				08A2D2BF1A2E45FB00D07A03 /* LaunchScreen.xib */,
 				08A2D2AD1A2E45FB00D07A03 /* Supporting Files */,
 			);
 			path = "PerfTest1-ObjC";
@@ -131,7 +128,7 @@
 		08A2D2D81A320F5A00D07A03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				08A2D2D61A320F4200D07A03 /* WindowsAzureMobileServices.framework */,
+				08B596B91BC059640020C769 /* WindowsAzureMobileServices.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -180,7 +177,7 @@
 		08A2D2A21A2E45FB00D07A03 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "kevin Ford";
 				TargetAttributes = {
 					08A2D2A91A2E45FB00D07A03 = {
@@ -218,7 +215,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				08A2D2BC1A2E45FB00D07A03 /* Main.storyboard in Resources */,
-				08A2D2C11A2E45FB00D07A03 /* LaunchScreen.xib in Resources */,
 				08A2D2BE1A2E45FB00D07A03 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,14 +267,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		08A2D2BF1A2E45FB00D07A03 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				08A2D2C01A2E45FB00D07A03 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -299,9 +287,10 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: kevin Ford (S6DU94W64R)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -316,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -352,8 +341,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -371,7 +361,9 @@
 				);
 				INFOPLIST_FILE = "PerfTest1-ObjC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Magenic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -386,7 +378,9 @@
 				);
 				INFOPLIST_FILE = "PerfTest1-ObjC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Magenic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -404,6 +398,7 @@
 				);
 				INFOPLIST_FILE = "PerfTest1-ObjCTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Magenic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PerfTest1-ObjC.app/PerfTest1-ObjC";
 			};
@@ -419,6 +414,7 @@
 				);
 				INFOPLIST_FILE = "PerfTest1-ObjCTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Magenic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PerfTest1-ObjC.app/PerfTest1-ObjC";
 			};

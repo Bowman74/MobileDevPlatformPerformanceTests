@@ -3,8 +3,10 @@
 					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 					   x:Class="PerfTest1_XamarinForms.Forms.CalcPrimes">
 	<StackLayout Orientation="Vertical">
-        <Label Text="Enter Max Value:" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
-        <Entry Text="{Binding MaxPrime, Mode=TwoWay}"  x:Name="txtMaxValue" VerticalOptions="Start" HorizontalOptions="FillAndExpand"></Entry>
+		<StackLayout Orientation="Horizontal">
+        	<Label Text="Enter Max Value:" VerticalOptions="FillAndExpand" HorizontalOptions="Start" />
+        	<Entry Text="{Binding MaxPrime, Mode=TwoWay}"  x:Name="txtMaxValue" VerticalOptions="Start" HorizontalOptions="FillAndExpand"></Entry>
+        </StackLayout>
         <Button Text="Calc Primes" x:Name="btnCalcPrimes" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Command="{Binding CalcPrimes}"></Button>
     </StackLayout>
 </ContentPage>
