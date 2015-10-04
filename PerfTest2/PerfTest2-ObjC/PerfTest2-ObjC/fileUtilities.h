@@ -15,6 +15,6 @@
 - (void)deleteFile:(NSError**)error;
 - (void)createFile:(NSError**)error;
 - (void)writeLineToFile:(NSError**)error withTextToWrite:(NSData*)textToWrite;
-- (NSData*)readFileContents:(NSError**)error;
+- (NSArray*)readFileContents:(NSError**)error;
 
 @end

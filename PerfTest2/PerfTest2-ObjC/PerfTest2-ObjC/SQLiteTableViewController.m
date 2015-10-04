@@ -62,12 +62,15 @@
     
     [utilities openConnection:&error];
     if (error) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                        message: @"Error opening connection"
-                                                       delegate:self
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        [alert show];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:@"EError opening connection" preferredStyle: UIAlertControllerStyleAlert];
+        
+        UIAlertAction *alertAction = [UIAlertAction actionWithTitle: @"OK"
+                                                              style: UIAlertActionStyleDestructive
+                                                            handler: NULL];
+        
+        [alert addAction: alertAction];
+        [self presentViewController: alert animated: YES completion: nil];
+        
         return;
     }
 
@@ -77,12 +80,15 @@
         results = [utilities getRecordsWith1:&error];
     }
     if (error) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                        message: [NSString stringWithFormat:@"%@%@", @"Error executing select statement: ", error.description]
-                                                       delegate:self
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        [alert show];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:[NSString stringWithFormat:@"%@%@", @"Error executing select statement: ", error.description] preferredStyle: UIAlertControllerStyleAlert];
+        
+        UIAlertAction *alertAction = [UIAlertAction actionWithTitle: @"OK"
+                                                              style: UIAlertActionStyleDestructive
+                                                            handler: NULL];
+        
+        [alert addAction: alertAction];
+        [self presentViewController: alert animated: YES completion: nil];
+        
         return;
     }
 }

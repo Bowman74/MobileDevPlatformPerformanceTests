@@ -148,21 +148,23 @@ const int menuLoadAndDisplayFile = 5;
     
     
     if (!hasError) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Cleanup and Prepare for Tests Successful"
-                                                        message:@"Completed Test Setup"
-                                                       delegate:self
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Cleanup and Prepare for Tests Successful" message:@"Completed Test Setup" preferredStyle: UIAlertControllerStyleAlert];
         
-        [alert show];
+        UIAlertAction *alertAction = [UIAlertAction actionWithTitle: @"OK"
+                                                              style: UIAlertActionStyleDestructive
+                                                            handler: NULL];
+        
+        [alert addAction: alertAction];
+        [self presentViewController: alert animated: YES completion: nil];
     } else {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Cleanup and Prepare for Tests Error"
-                                                        message:[NSString stringWithFormat:@"%@%@", @"Error: ", errMsg]
-                                                       delegate:self
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Cleanup and Prepare for Tests Error" message:[NSString stringWithFormat:@"%@%@", @"Error: ", errMsg] preferredStyle: UIAlertControllerStyleAlert];
         
-        [alert show];
+        UIAlertAction *alertAction = [UIAlertAction actionWithTitle: @"OK"
+                                                              style: UIAlertActionStyleDestructive
+                                                            handler: NULL];
+        
+        [alert addAction: alertAction];
+        [self presentViewController: alert animated: YES completion: nil];
     }
 }
 
@@ -174,12 +176,15 @@ const int menuLoadAndDisplayFile = 5;
     
     [utilities openConnection:&error];
     if (error) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                        message: @"Error opening connection"
-                                        delegate:self
-                                        cancelButtonTitle:@"OK"
-                                        otherButtonTitles:nil];
-        [alert show];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:@"Error opening connection" preferredStyle: UIAlertControllerStyleAlert];
+        
+        UIAlertAction *alertAction = [UIAlertAction actionWithTitle: @"OK"
+                                                              style: UIAlertActionStyleDestructive
+                                                            handler: NULL];
+        
+        [alert addAction: alertAction];
+        [self presentViewController: alert animated: YES completion: nil];
+
         return;
     }
     
@@ -187,12 +192,15 @@ const int menuLoadAndDisplayFile = 5;
         [utilities addRecord:@"test" withLastName:@"person" withIndex:i withMisc:@"12345678901234567890123456789012345678901234567890" withError:&error];
         
         if (error) {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                            message: error.description
-                                            delegate:self
-                                            cancelButtonTitle:@"OK"
-                                            otherButtonTitles:nil];
-            [alert show];
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:error.description preferredStyle: UIAlertControllerStyleAlert];
+            
+            UIAlertAction *alertAction = [UIAlertAction actionWithTitle: @"OK"
+                                                                  style: UIAlertActionStyleDestructive
+                                                                handler: NULL];
+            
+            [alert addAction: alertAction];
+            [self presentViewController: alert animated: YES completion: nil];
+            
             [utilities closeConnection:&error];
             return;
         }
@@ -200,21 +208,26 @@ const int menuLoadAndDisplayFile = 5;
     
     [utilities closeConnection:&error];
     if (error) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                        message: @"Error closing connection"
-                                        delegate:self
-                                        cancelButtonTitle:@"OK"
-                                        otherButtonTitles:nil];
-        [alert show];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:@"Error closing connection" preferredStyle: UIAlertControllerStyleAlert];
+        
+        UIAlertAction *alertAction = [UIAlertAction actionWithTitle: @"OK"
+                                                              style: UIAlertActionStyleDestructive
+                                                            handler: NULL];
+        
+        [alert addAction: alertAction];
+        [self presentViewController: alert animated: YES completion: nil];
+        
         return;
     }
 
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success"
-                                        message:@"All records written to database"
-                                        delegate:self
-                                        cancelButtonTitle:@"OK"
-                                        otherButtonTitles:nil];
-    [alert show];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Success" message:@"All records written to database" preferredStyle: UIAlertControllerStyleAlert];
+    
+    UIAlertAction *alertAction = [UIAlertAction actionWithTitle: @"OK"
+                                                          style: UIAlertActionStyleDestructive
+                                                        handler: NULL];
+    
+    [alert addAction: alertAction];
+    [self presentViewController: alert animated: YES completion: nil];
 }
 
 - (void)showAllRecords {
@@ -237,12 +250,15 @@ const int menuLoadAndDisplayFile = 5;
     
     [utilities openFile:&error];
     if (error) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                        message: @"Error opening file"
-                                        delegate:self
-                                        cancelButtonTitle:@"OK"
-                                        otherButtonTitles:nil];
-        [alert show];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:@"Error opening file" preferredStyle: UIAlertControllerStyleAlert];
+        
+        UIAlertAction *alertAction = [UIAlertAction actionWithTitle: @"OK"
+                                                              style: UIAlertActionStyleDestructive
+                                                            handler: NULL];
+        
+        [alert addAction: alertAction];
+        [self presentViewController: alert animated: YES completion: nil];
+        
         return;
     }
     
@@ -254,12 +270,15 @@ const int menuLoadAndDisplayFile = 5;
         [utilities writeLineToFile:&error withTextToWrite:textLine];
         
         if (error) {
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                            message: error.description
-                                            delegate:self
-                                            cancelButtonTitle:@"OK"
-                                            otherButtonTitles:nil];
-            [alert show];
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:error.description preferredStyle: UIAlertControllerStyleAlert];
+            
+            UIAlertAction *alertAction = [UIAlertAction actionWithTitle: @"OK"
+                                                                  style: UIAlertActionStyleDestructive
+                                                                handler: NULL];
+            
+            [alert addAction: alertAction];
+            [self presentViewController: alert animated: YES completion: nil];
+            
             [utilities closeFile:&error];
             return;
         }
@@ -267,22 +286,26 @@ const int menuLoadAndDisplayFile = 5;
     
     [utilities closeFile:&error];
     if (error) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                            message: @"Error closing file"
-                                            delegate:self
-                                            cancelButtonTitle:@"OK"
-                                            otherButtonTitles:nil];
-        [alert show];
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:@"Error closing file" preferredStyle: UIAlertControllerStyleAlert];
+        
+        UIAlertAction *alertAction = [UIAlertAction actionWithTitle: @"OK"
+                                                              style: UIAlertActionStyleDestructive
+                                                            handler: NULL];
+        
+        [alert addAction: alertAction];
+        [self presentViewController: alert animated: YES completion: nil];
+        
         return;
     }
-        
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success"
-                                        message:@"All lines written to file"
-                                        delegate:self
-                                        cancelButtonTitle:@"OK"
-                                        otherButtonTitles:nil];
-
-    [alert show];
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Success" message:@"All lines written to file" preferredStyle: UIAlertControllerStyleAlert];
+    
+    UIAlertAction *alertAction = [UIAlertAction actionWithTitle: @"OK"
+                                                          style: UIAlertActionStyleDestructive
+                                                        handler: NULL];
+    
+    [alert addAction: alertAction];
+    [self presentViewController: alert animated: YES completion: nil];
 }
 
 - (void)loadAndDisplayFile {
